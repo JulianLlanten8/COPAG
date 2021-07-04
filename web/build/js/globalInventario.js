@@ -158,7 +158,7 @@ $(document).ready(function() {
 
     /**Envio el valor del selector tipo materia */
     $(document).on("change", "#tipo", function() {
-        var cualquier = $(this).parents();
+        var cualquier = $(this).parent().parent().parent();
         var id = $(this).val();
         var url = $(this).attr("data-url");
         $.ajax({
@@ -176,7 +176,7 @@ $(document).ready(function() {
     var cantidadGlobal = 0;
     $(document).on("change", "#Articulos", function() {
         let cantidad;
-        var padre = $(this).parent().parent();
+        var padre = $(this).parents();
         var vale = $(this).val();
         var url = $(this).attr("data-url");
 

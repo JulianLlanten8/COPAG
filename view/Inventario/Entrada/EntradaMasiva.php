@@ -33,7 +33,7 @@
             <div class="form-group col-12">
                 <div class="form-check ml-0">
                     <label for="Arti_cantidad">Cantidad</label>
-                    <input type="number" id="Arti_cantidad"  name="Arti_cantidad[]" class="form-control" required min="0" value="">
+                    <input type="number" id="Arti_cantidad" name="Arti_cantidad[]" class="form-control" required min="0" value="">
                     <div class="invalid-feedback">Agrege la cantidad deseada</div>
                     <div class="valid-feedback">La cantidad es valida</div>
                 </div>
