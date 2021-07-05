@@ -8,7 +8,7 @@
         <div class="shadow card bg-light text-success mb-3 mt-3 pb-3">
             <div class="form-group col-12">
                 <label for="tipo">Nombre articulo:</label>
-                <select name="tipo" id="tipo" class="form-control" required data-url="<?= getUrl("Salida", "Salida", "SelectEntrada", false, "ajax") ?>">
+                <select name="tipo" id="tipo" class="custom-select" required data-url="<?= getUrl("Salida", "Salida", "SelectEntrada", false, "ajax") ?>">
                     <option selected disabled value="">Seleccione..</option>
                     <?php foreach ($tipos as $tp) {
                         echo "<option value='" . $tp["Tart_id"] . "'>" . $tp["Tart_descripcion"] . "</option>";
@@ -20,7 +20,7 @@
 
             <div class="form-group col-12">
                 <label for="Articulos">Nombre articulo:</label>
-                <select name="Arti_id[]" id="Articulos" class="form-control" data-url="<?= getUrl("Salida", "Salida", "cantidad", false, "ajax") ?>">
+                <select name="Arti_id[]" id="Articulos" class="custom-select" data-url="<?= getUrl("Salida", "Salida", "cantidad", false, "ajax") ?>">
                     <option selected disabled value="">Seleccione..</option>
                 </select>
             </div>
@@ -29,10 +29,7 @@
             <div id="noHay" class="alert alert-danger d-none" role="alert">
                 <strong>ps!</strong> no hay suficiente stock de ese articulo para tal cantidad
             </div>
-            <div class="form-group col-12">
-                <div id="contieneInput" class="form-check">
-
-                </div>
+            <div id="contieneInput" class="form-check col-12">
             </div>
         </div>
     </div>
