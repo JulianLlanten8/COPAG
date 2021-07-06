@@ -29,7 +29,6 @@
                     <div class="valid-feedback">El articulo es correcto</div>
                 </div>
             </div>
-
             <div class="form-group col-12">
                 <div class="form-check ml-0">
                     <label for="Arti_cantidad">Cantidad</label>
@@ -38,18 +37,14 @@
                     <div class="valid-feedback">La cantidad es valida</div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <div class="d-flex justify-content-end x_panel">
         <button id="agregarDiv" title="+ Articulo" type="button" class="btn btn-primary justify-content-end mr-0">
             <i class="fa fa-plus"></i>
         </button>
     </div>
-
     <div class="x_title"></div>
-
     <div class="x_panel" style="z-index: 100;">
         <button id="send" type="submit" name="enviar" class="btn btn-success btn-lg btn-block">
             AGREGAR

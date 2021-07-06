@@ -254,8 +254,8 @@ $(document).ready(function () {
   /*Mensaje agrego exitosamente*/
 
   /**Agregar una nueva car con pulsar el + */
-  $(document).keypress(function (eTecla) {
-    if (eTecla.which == 43) {
+  $(document).keypress(function (e) {
+    if (e.which == 43 || e.keyCode == "+") {
       Clonador();
     }
   });
